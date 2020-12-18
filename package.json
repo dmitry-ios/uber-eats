@@ -1,12 +1,18 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "uber-eats",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Uber Eats",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
+    "eslint": "7.1.0",
+    "eslint-config-htmlacademy": "0.6.0",
     "gulp": "4.0.x",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
@@ -16,13 +22,12 @@
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -48,9 +53,9 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "12.18.2"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "6.0.0"
   }
 }
