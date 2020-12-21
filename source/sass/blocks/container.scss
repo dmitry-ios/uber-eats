@@ -1,5 +1,10 @@
 .container {
   margin: 0 auto;
-  padding: 0 8px;
+  padding-left: 8px;
+  padding-right: 14px;
   max-width: $max-container-desktop;
+
+  @media (max-width: $tablet-width-only) {
+    padding-right: 8px;
+  }
 }
