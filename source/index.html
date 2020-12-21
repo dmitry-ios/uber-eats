@@ -35,8 +35,170 @@
     </header>
 
 
-    <main>
-      Контент сайта
+    <main class="page-main">
+      <section class="restaurants">
+        <h1 class="visually-hidden">Список ресторанов</h1>
+        <form class="restaurants__form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-field">Введите название ресторана</label>
+          <input class="restaurants__input" type="text" name="search" id="search-field" placeholder="Поиск по ресторанам и кухням">
+        </form>
+        <h2 class="restaurants__title">Рестораны в Москве</h2>
+        <ul class="restaurants__list restaurant-list">
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/macdonalds-card-mobile.webp 1x, img/macdonalds-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/macdonalds-card-tablet.webp 1x, img/macdonalds-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/macdonalds-card-desktop.webp 1x, img/macdonalds-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/macdonalds-card-mobile.jpg 1x, img/macdonalds-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/macdonalds-card-tablet.jpg 1x, img/macdonalds-card-tablet@2x.jpg 2x">
+                  <img src="img/macdonalds-card-desktop.jpg" srcset="img/macdonalds-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в Макдональдс">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">Макдоналдс — Газетный</p>
+              <p class="restaurant-list__tags">₽₽ • Бургеры</p>
+              <p class="restaurant-list__cooking-time">25 - 35 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/dimsum-card-mobile.webp 1x, img/dimsum-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/dimsum-card-tablet.webp 1x, img/dimsum-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/dimsum-card-desktop.webp 1x, img/dimsum-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/dimsum-card-mobile.jpg 1x, img/dimsum-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/dimsum-card-tablet.jpg 1x, img/dimsum-card-tablet@2x.jpg 2x">
+                  <img src="img/dimsum-card-desktop.jpg" srcset="img/dimsum-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в DimSum & Co">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">DimSum & Co — ЦДМ</p>
+              <p class="restaurant-list__tags">₽ • Японская • Китайская • Азиатская</p>
+              <p class="restaurant-list__cooking-time">40 - 50 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/dvijok-card-mobile.webp 1x, img/dvijok-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/dvijok-card-tablet.webp 1x, img/dvijok-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/dvijok-card-desktop.webp 1x, img/dvijok-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/dvijok-card-mobile.jpg 1x, img/dvijok-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/dvijok-card-tablet.jpg 1x, img/dvijok-card-tablet@2x.jpg 2x">
+                  <img src="img/dvijok-card-desktop.jpg" srcset="img/dvijok-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в ДвижОК">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">ДвижОК — Манежная</p>
+              <p class="restaurant-list__tags">₽ • Американская • Европейская</p>
+              <p class="restaurant-list__cooking-time">35 - 45 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/nya-card-mobile.webp 1x, img/nya-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/nya-card-tablet.webp 1x, img/nya-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/nya-card-desktop.webp 1x, img/nya-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/nya-card-mobile.jpg 1x, img/nya-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/nya-card-tablet.jpg 1x, img/nya-card-tablet@2x.jpg 2x">
+                  <img src="img/nya-card-desktop.jpg" srcset="img/nya-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в НЯ">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">НЯ — NHA</p>
+              <p class="restaurant-list__tags">₽₽ • Вьетнамская</p>
+              <p class="restaurant-list__cooking-time">30 - 40 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/tochkadzi-card-mobile.webp 1x, img/tochkadzi-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/tochkadzi-card-tablet.webp 1x, img/tochkadzi-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/tochkadzi-card-desktop.webp 1x, img/tochkadzi-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/tochkadzi-card-mobile.jpg 1x, img/tochkadzi-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/tochkadzi-card-tablet.jpg 1x, img/tochkadzi-card-tablet@2x.jpg 2x">
+                  <img src="img/tochkadzi-card-desktop.jpg" srcset="img/tochkadzi-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в Точка Дзы">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">Точка Дзы — Цветной</p>
+              <p class="restaurant-list__tags">₽₽ • Вьетнамская</p>
+              <p class="restaurant-list__cooking-time">40 - 50 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/cinnabon-card-mobile.webp 1x, img/cinnabon-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/cinnabon-card-tablet.webp 1x, img/cinnabon-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cinnabon-card-desktop.webp 1x, img/cinnabon-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/cinnabon-card-mobile.jpg 1x, img/cinnabon-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/cinnabon-card-tablet.jpg 1x, img/cinnabon-card-tablet@2x.jpg 2x">
+                  <img src="img/cinnabon-card-desktop.jpg" srcset="img/cinnabon-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в Cinnabon">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">Cinnabon</p>
+              <p class="restaurant-list__tags">₽ • Выпечка • Десерты • Капкейки</p>
+              <p class="restaurant-list__cooking-time">25 - 35 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/pizzelove-card-mobile.webp 1x, img/pizzelove-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/pizzelove-card-tablet.webp 1x, img/pizzelove-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/pizzelove-card-desktop.webp 1x, img/pizzelove-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/pizzelove-card-mobile.jpg 1x, img/pizzelove-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/pizzelove-card-tablet.jpg 1x, img/pizzelove-card-tablet@2x.jpg 2x">
+                  <img src="img/pizzelove-card-desktop.jpg" srcset="img/pizzelove-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в PIZZELOVE">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">PIZZELOVE</p>
+              <p class="restaurant-list__tags">₽₽ • Пицца</p>
+              <p class="restaurant-list__cooking-time">15 - 25 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/zukafe-card-mobile.webp 1x, img/zukafe-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/zukafe-card-tablet.webp 1x, img/zukafe-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/zukafe-card-desktop.webp 1x, img/zukafe-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/zukafe-card-mobile.jpg 1x, img/zukafe-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/zukafe-card-tablet.jpg 1x, img/zukafe-card-tablet@2x.jpg 2x">
+                  <img src="img/zukafe-card-desktop.jpg" srcset="img/zukafe-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в Zю кафе">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">Zю кафе — Тверская</p>
+              <p class="restaurant-list__tags">₽₽ • Японская</p>
+              <p class="restaurant-list__cooking-time">25 - 35 мин</p>
+            </a>
+          </li>
+          <li class="restaurant-list__item">
+            <a class="restaurant-list__link" href="#">
+              <p class="restaurant-list__illustration">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/barbqcafe-card-mobile.webp 1x, img/barbqcafe-card-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 977px)" srcset="img/barbqcafe-card-tablet.webp 1x, img/barbqcafe-card-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/barbqcafe-card-desktop.webp 1x, img/barbqcafe-card-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/barbqcafe-card-mobile.jpg 1x, img/barbqcafe-card-mobile@2x.jpg 2x">
+                  <source media="(max-width: 977px)" srcset="img/barbqcafe-card-tablet.jpg 1x, img/barbqcafe-card-tablet@2x.jpg 2x">
+                  <img src="img/barbqcafe-card-desktop.jpg" srcset="img/barbqcafe-card-desktop@2x.jpg 2x" width="308" height="256" alt="Иллюстрация еды в Bar BQ Cafe">
+                </picture>
+              </p>
+              <p class="restaurant-list__name">Bar BQ Cafe — Манежная</p>
+              <p class="restaurant-list__tags">₽₽₽ • Европейская</p>
+              <p class="restaurant-list__cooking-time">30 - 40 мин</p>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
 
 
