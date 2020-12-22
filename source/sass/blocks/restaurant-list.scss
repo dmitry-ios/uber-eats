@@ -1,0 +1,77 @@
+.restaurant-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width-only) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 16px;
+  }
+}
+
+.restaurant-list__link {
+  display: block;
+  padding-bottom: 20px;
+
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    box-shadow: 1px 3px 7px 0 $shadow-grey-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.restaurant-list__illustration {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width-only) {
+    img {
+      width: 368px;
+      height: 256px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.restaurant-list__name {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+}
+
+.restaurant-list__tags {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: $basic-dark-grey-color;
+}
+
+.restaurant-list__cooking-time {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+
+  font-size: 13px;
+  line-height: 21px;
+}
