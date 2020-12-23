@@ -1,0 +1,60 @@
+.lang-form__select {
+  padding: 12px 12px;
+  padding-left: 48px;
+  width: 227px;
+  height: 40px;
+
+  color: $basic-white-color;
+  font-size: 13px;
+  line-height: 15px;
+
+  background-color: $border-black-color;
+  border: 0;
+  border-radius: 2px;
+  appearance: none;
+
+  @media (max-width: $tablet-width-only) {
+    width: 176px;
+  }
+}
+
+.lang-form__wrapper {
+  position: relative;
+
+  display: inline-block;
+}
+
+.lang-form__icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  &--half {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    &--full {
+      display: none;
+    }
+
+    &--half {
+      display: block;
+    }
+  }
+}
+
+.lang-form__button {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+}
+
+.lang-form__select:hover + .lang-form__button,
+.lang-form__select:focus + .lang-form__button {
+  opacity: 0.7;
+}
+
+.lang-form__select:active + .lang-form__button {
+  opacity: 0.3;
+}

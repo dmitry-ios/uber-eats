@@ -1,0 +1,15 @@
+.nav-list {
+  padding-top: 7px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 4px;
+
+    &--first {
+      padding-top: 38px;
+    }
+  }
+}
+
+.nav-list__item {
+  padding-bottom: 23px;
+}

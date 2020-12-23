@@ -216,65 +216,111 @@
           </a>
         </div>
 
-        <section class="page-footer__nav">
+        <section class="page-footer__nav footer-border">
           <h2 class="visually-hidden">
             Навигация по сайту
           </h2>
           <div>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="lang-form" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="lang-field">Выберите язык сайта</label>
-              <select name="site-language" id="lang-field">
-                <option value="ru" selected>Русский</option>
-                <option value="en">Английский</option>
-              </select>
+              <div class="lang-form__wrapper">
+                <svg class="lang-form__icon lang-form__icon--full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite_auto.svg#icon-world"></use>
+                </svg>
+                <svg class="lang-form__icon lang-form__icon--half" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite_auto.svg#icon-half-world"></use>
+                </svg>
+                <select class="lang-form__select" name="site-language" id="lang-field">
+                  <option value="ru" selected>Русский</option>
+                  <option value="en">Английский</option>
+                </select>
+                <svg class="lang-form__button" aria-hidden="true" focusable="false" width="14" height="8" viewBox="0 0 14 8">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                </svg>
+              </div>
             </form>
-            <p><span>#</span>UberEats</p>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
+            <p class="hashtag"><span class="hashtag__hash">#</span>UberEats</p>
+            <ul class="socials-list">
+              <li class="socials-list__item"><a class="page-footer__link link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Facebook</span></a></li>
+              <li class="socials-list__item socials-list__item--twitter"><a class="page-footer__link link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Twitter</span></a></li>
+              <li class="socials-list__item"><a class="page-footer__link link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+                </svg>
+                <span class="visually-hidden">Instagram/span></a></li>
             </ul>
           </div>
-          <div>
-            <ul>
-              <li><a href="#">Об UberEats</a></li>
-              <li><a href="#">Станьте партнёром по доставке</a></li>
-              <li><a href="#">Станьте парнёром-рестораном</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><a href="#">Все города</a></li>
-              <li><a href="#">Цены</a></li>
-              <li><a href="#">Помощь</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
+
+          <ul class="page-footer__nav-list nav-list nav-list--first">
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Об UberEats</a></li>
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Станьте партнёром по доставке</a></li>
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Станьте парнёром-рестораном</a></li>
+          </ul>
+
+          <ul class="page-footer__nav-list nav-list">
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Все города</a></li>
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Цены</a></li>
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">Помощь</a></li>
+            <li class="nav-list__item"><a class="page-footer__link link" href="#">FAQs</a></li>
+          </ul>
+
         </section>
 
-        <section class="page-footer__apps">
+        <section class="page-footer__apps footer-border">
           <h2 class="visually-hidden">
             Наши мобильные приложения
           </h2>
-          <ul>
-            <li><a href="#"><img src="img/button-appstore.png" alt="Приложение в App Store" width="121" height="40"></a></li>
-            <li><a href="#"><img src="img/button-googleplay.png" alt="Приложение в Google Play" width="135" height="40"></a></li>
+          <ul class="page-footer__apps-list apps-list">
+            <li class="page-footer__apps-item page-footer__apps-item--appstore">
+              <a class="apps-list__link link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/button-appstore-mobile.webp 1x, img/button-appstore-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/button-appstore.webp 1x, img/button-appstore@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/button-appstore-mobile.png 1x, img/button-appstore-mobile@2x.png 2x">
+                  <img src="img/button-appstore.png" srcset="img/button-appstore@2x.png 2x" alt="Приложение в App Store" width="121" height="40">
+                </picture>
+              </a>
+            </li>
+            <li class="page-footer__apps-item page-footer__apps-item--googleplay">
+              <a class="apps-list__link link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/button-googleplay-mobile.webp 1x, img/button-googleplay-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/button-googleplay.webp 1x, img/button-googleplay@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/button-googleplay-mobile.png 1x, img/button-googleplay-mobile@2x.png 2x">
+                  <img src="img/button-googleplay.png" srcset="img/button-googleplay@2x.png 2x" alt="Приложение в Google Play" width="135" height="40">
+                </picture>
+              </a>
+            </li>
           </ul>
         </section>
 
-        <section class="page-footer__privacy">
+        <section class="page-footer__privacy footer-border">
           <h2 class="visually-hidden">
             Правовая информация и конфиденциальность
           </h2>
-          <ul>
-            <li><a href="#">© 2017 Uber Technologies Inc.</a></li>
-            <li><a href="#">Обработка персональных данных</a></li>
-            <li><a href="#">Пользовательское соглашение</a></li>
+          <ul class="page-footer__privacy-list">
+            <li class="page-footer__privacy-item"><a class="page-footer__link link" href="#">© 2017 Uber Technologies Inc.</a></li>
+            <li class="page-footer__privacy-item"><a class="page-footer__link link" href="#">Обработка персональных данных</a></li>
+            <li class="page-footer__privacy-item"><a class="page-footer__link link" href="#">Пользовательское соглашение</a></li>
           </ul>
         </section>
       </div>
     </footer>
 
+    <button class="scroll-button scroll-button--hidden" type="button">
+      <svg width="16" height="25" viewBox="0 0 16 25" aria-hidden="true">
+        <use xlink:href="img/sprite_auto.svg#icon-arrow-up"></use>
+      </svg>
+      <span class="visually-hidden">Наверх</span>
+    </button>
 
     <script src="js/bundle.min.js"></script>
   </body>
