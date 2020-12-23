@@ -54,7 +54,11 @@
 .restaurant-list__name {
   margin: 0;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 8px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 11px;
+  }
 }
 
 .restaurant-list__tags {
