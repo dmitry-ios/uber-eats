@@ -105,7 +105,8 @@ gulp.task(`clean`, () => {
 
 gulp.task(`js`, () => {
   return gulp.src([
-    `source/js/script.js`
+    `source/js/script.js`,
+    `source/js/warning-alert.js`
   ], {
     base: `source`
   })
